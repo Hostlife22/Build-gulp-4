@@ -1,0 +1,33 @@
+$base-font-size: 24px;
+
+@mixin ph {
+	@media (max-width: 700px) {
+		@content;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	font-size: $base-font-size;
+	font-family: Arial;
+	line-height: 1.5;
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	@include ph {
+		color: #fff;
+		background-color: #000;
+	}
+}
+
+@import "block/*.scss"; // используем маску , а также можно по одному подключать, sassGlob убрать
