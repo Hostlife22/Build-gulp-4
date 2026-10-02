@@ -101,8 +101,10 @@ export function App() {
               home.
             </p>
             <div className="intro-hint">
-              <span className="small-cross">+</span> Pick an object. Discover
-              its story.
+              <span className="small-cross">
+                <Icon name="plus" size={14} />
+              </span>{' '}
+              Pick an object. Discover its story.
             </div>
           </div>
           <div

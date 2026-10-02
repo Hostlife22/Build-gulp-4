@@ -178,7 +178,12 @@ h1 em {
   border: 1px solid var(--line);
   border-radius: 50%;
   color: var(--olive);
-  font-size: 17px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.small-cross > svg,
+.hotspot > span > svg {
+  display: block;
 }
 .scene-container {
   position: absolute;
@@ -189,12 +194,18 @@ h1 em {
 }
 .hotspot {
   border: 0;
+  border-radius: 50%;
+  appearance: none;
+  line-height: 1;
   background: transparent;
   padding: 9px;
   width: 44px;
   height: 44px;
   display: grid;
   place-items: center;
+}
+.hotspot:active {
+  background: transparent;
 }
 .hotspot > span {
   display: grid;
@@ -208,6 +219,7 @@ h1 em {
   font-size: 10px;
   border: 1px solid #fff;
 }
+.hotspot:active > span,
 .hotspot:hover > span,
 .hotspot.is-selected > span {
   color: var(--surface);
