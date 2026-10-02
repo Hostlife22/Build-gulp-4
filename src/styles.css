@@ -108,6 +108,11 @@ a {
   min-height: 44px;
   font-size: 13px;
 }
+.text-button:hover,
+.text-button:active {
+  background: transparent;
+  color: var(--olive);
+}
 .question-mark {
   display: grid;
   place-items: center;
