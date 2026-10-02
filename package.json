@@ -2,6 +2,32 @@
   "name": "sunday-space",
   "private": true,
   "version": "1.0.0",
+  "description": "An interactive isometric 3D cozy room built with React, TypeScript, and Three.js. Code-crafted models, warm lighting, and accessible controls.",
+  "keywords": [
+    "react",
+    "typescript",
+    "threejs",
+    "react-three-fiber",
+    "drei",
+    "vite",
+    "webgl",
+    "3d",
+    "isometric",
+    "cozy-room",
+    "interactive-3d",
+    "procedural-modeling",
+    "accessibility"
+  ],
+  "homepage": "https://hostlife22.github.io/sunday-space/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hostlife22/sunday-space.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hostlife22/sunday-space/issues"
+  },
+  "author": "Hostlife22",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
